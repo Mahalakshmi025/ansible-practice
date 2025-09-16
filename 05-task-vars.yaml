@@ -1,3 +1,15 @@
+#PLAY LEVEL VARIABLES
+- name: variables to print
+  hosts: web
+  vars:
+    COURSE: "Devops with AWS"
+    NAME: "siva"
+    DURATION: "120hrs"
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+      msg: "Hi, I'm learning {{COURSE}}, Duration: {{DURATION}}, Trainer: {{NAME}}"
+
 #task level variables
 - name: print the info again
   vars: #task level variables override play level
