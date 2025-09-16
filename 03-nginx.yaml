@@ -6,4 +6,13 @@
     ansible.builtin.package: #hetrogeneous module that can for all ditsros
       name: nginx
       state: present
+
+#to run the service & enable the service
+  - name: run nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes
+   
+
  
