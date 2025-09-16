@@ -10,6 +10,6 @@
 
   - name: print the user information
     ansible.buitin.debug:
-      msg: "user info {{USER}}"
+      msg: "user info: {{ USER }}"
 
   # - name: create user
