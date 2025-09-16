@@ -9,7 +9,6 @@
 
 
   - name: print the user information
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "user info: {{ USER }}"
-
   # - name: create user
