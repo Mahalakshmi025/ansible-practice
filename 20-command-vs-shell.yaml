@@ -3,4 +3,4 @@
   connection: local
   tasks:
   - name: execute the command
-    ansible.builtin.command: ls -ltr >  /tmp/output.txt #command module, just issues the command
+    ansible.builtin.shell: ls -ltr >  /tmp/output.txt #command module, just issues the comman
